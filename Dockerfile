@@ -8,7 +8,7 @@ RUN mkdir /tmp/www
 
 ADD grab.sh /
 ADD lighttpd.conf /
-
+ADD index.html /tmp/www/
 EXPOSE 80
 
 #HEALTHCHECK CMD curl --fail http://192.168.1.16:8844/snapshot.jpg || exit 1
